@@ -1,0 +1,1355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* :root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #15112B;
+
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-color: #ffffff; */
+  z-index: 99;
+}
+
+.nav__content {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    height:88px;
+  background-color: #15112B;
+
+    /* background-color: #020307; */
+    position: fixed;
+     width: 90%;
+     top: 0%;
+     /* margin-bottom: 60px; */
+     left:5%;
+     /* right: 10%; */
+}
+
+.logoP{
+    /* width: 120px;
+    left: 0%;
+    top: 20px; */
+    /* position: relative; */
+    width: 120px;
+    left: -30%;
+    top: 10px;
+    position: relative;
+}
+
+.liBtn{
+padding-bottom: 1rem;
+}
+ul li .btnStyle1,  .btnStyle3 ,li .btnStyle2{
+
+  border-radius: 13px;
+  color: #fff;
+  background-color: #9F8DC3;
+  padding-top: 0.5rem ;
+  padding-bottom: 0.5rem;
+  height: auto;
+  width: auto;
+  text-align: center;
+  align-items:center;
+
+}
+
+ul li .btnStyle1{
+  display: flex;
+  /* margin-right: 130px; */
+}
+
+
+.btnStyle3{
+display: block;
+margin-left: auto;
+margin-right:auto ;
+  width: 16rem;
+
+}
+
+li .btnStyle2 {
+  width: 16rem;
+    display: none;
+
+}
+
+nav .checkbox {
+  display: none;
+  left: 90%;
+  position: fixed;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+  /* background-color: #020307; */
+
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/* ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+} */
+
+.section {
+  background-color: #15112B;
+  padding: 1.5rem 0.5rem 2rem 0.5rem;
+}
+
+.section__container {
+
+  /* min-height: 100vh;
+  max-width: 1300px; */
+  margin: auto;
+  padding-top: 7.2%;
+  /* margin-top: 6%; */
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* gap:0rem; */
+  text-align: center;
+  /* margin-left: 25%;*/
+  /* margin-left: 1%;  */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.1rem;
+  /* padding-top: -200%; */
+
+
+
+}
+
+.background-text {
+    background-image: url('assets/neo-banks.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    height: 765px;
+    width: auto;
+    /* margin-top:7.5%; */
+    border-radius: 20px;
+  }
+  
+
+
+.subtitle {
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  margin-top: 10rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+    font-size: 2rem;
+    font-weight: bold;
+  /* line-height: 1.5rem; */
+  color: #ffffff;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  /* width: 200px; */
+
+}
+/* -------------------------Pourquoi------------------  */
+.container{
+    background-color: #100d22;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2rem 3rem;
+   text-align: left;
+   margin-left:20px ;
+   margin-right:20px ;
+  }
+.container p{ 
+    color: #fff;
+    font-size: 26px;
+  
+  }
+  .imgpourquoi{
+    width: 650px;
+  }
+  h1{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  /* ------------------------------------ */
+/* ----------------------AVANTAGES----------------- */
+
+
+.AvContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+  }
+  .Av-item {
+    width: calc(33.33% - 20px); /* Three items per line on desktop */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+/*  styles for icons */
+ .fi {
+  display: inline-block;
+  font-size: 24px;
+  vertical-align: middle;
+  margin-right: 5px; 
+  color: #fff;
+}
+
+/*  styles for headings */
+.Av-item h3 {
+  margin: 5px 0;
+  display: inline-block;
+  color: #fff;
+vertical-align: middle;
+font-size: 18px;
+
+}
+.Av-item p {
+  margin: 5px 5rem;
+  color: #fff;
+  font-size: 16px;
+ 
+
+
+}
+/* -----------------PARTENAIRES--------------------------------------------------------------- */
+
+.NosPartenaires{
+
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center; /* Center items horizontally */
+
+    background:#100D22;
+    /* margin: 100px;
+    margin-top: 5px; */
+    
+    
+    }
+    
+    .nositem{
+        /* flex: 1 1 20%;
+        margin:10px; */
+        width: calc(33.33% - 20px); /* Three items per line on desktop */
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+
+
+ /* ------------------------------------------------------------------- */
+.Rejoindre-liste {
+    margin: 0%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set height to fill the viewport */
+  }
+
+.contact{
+max-width: 900px;
+width: 100%;
+padding: 30px 30px;
+border-radius: 25px;
+background: #352F58;
+/* margin-left: 16%; */
+text-align: center; 
+}
+  .cardD{
+    justify-content: space-between;
+    
+  }
+  .cardB{
+    /* width: auto; */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  label{
+    font-size: 12px;
+    color: #fff;
+    margin-left:10px;
+  }
+ 
+  input{
+    height: 30px;
+    width: 410px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: #9F8DC3;
+  }
+  #mail,#login{
+    width: 100%;
+  }
+
+  .ligne1{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+.heading{
+font-size: 34px;
+color: #fff;
+  }
+.contact p{
+    font-size: 13px;
+    text-align: left;
+    color: #fff;
+  }
+  #login{
+    color: #fff;
+  }
+
+  /* explorer--------- */
+  .explorezCon{
+   margin-top: 2%;
+    padding: 2rem 2rem;
+    border-radius: 25px;
+    background: linear-gradient(to bottom right, #521C64,#171330);
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #fff;
+    text-align: center;
+
+  }
+  .explorez{
+    font-size: 25px;
+  }
+
+  .explorezCon p.btnExplorez {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #9F8DC3;
+
+  }
+  
+
+
+/*  ---------------NOS TACHNOLOGIE---------------------------*/
+
+.securité{
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, #25112B,#6F52AA);
+    width: 600px;   
+   margin-left: 60px;
+   padding: 40px 40px;   
+   font-size: 50px;
+   
+  }
+
+.protection{ 
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, #5D3E9B,#A088D0);
+    width: 600px;
+    padding: 15px 20px;
+}
+
+.respecter{
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, #1E1E33,#5C5792);
+    width: 600px;
+    padding: 15px 20px;
+}
+
+.Sécurité-PR{
+    display: flex;
+    gap: 20px;
+
+}
+.technologies h3{
+    color: #fff;
+    font-size: medium;
+    font-size: 20px;
+}
+.text-technologies{
+    font-size: 20px;
+    color: #fff;
+}
+/* ---------------------------------valeurs--------------- */
+
+.valeurs{
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+
+}
+.valeurs h3{
+    color: #fff;
+}
+.text-valeurs{
+  font-size: 14px;
+  color: #fff;
+}
+.imgVa{
+margin-top: 70px;
+}
+.VA{
+  margin-left: 3%;
+
+}
+#btnvaleurs{
+  margin-top: 5%;
+  border-radius: 15px;
+    color: #fff;
+    background-color: #9F8DC3;
+    padding-top: 0.5rem ;
+    padding-bottom: 0.5rem;
+    height: auto;
+    margin-left: 30%;
+    width: 40%;
+    font-size: 20px;
+    text-align: center;
+}
+.footer{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 2px solid #fff;
+    margin: 160px 80px 30px 80px;
+  }
+  .logo-footer{
+   width: 120px;
+  left: -30%;
+  top: 10px;
+  }
+  .linkF{
+    font-size: 16px;
+  }
+  .copyright{
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  }
+
+
+/* -------------------------------- */
+/* --------pricing --------------*/
+/* -------------------------------- */
+
+
+.price {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1100px; /* Set a maximum width */
+    margin: 0 auto; /* Center horizontally */
+    background: linear-gradient(to bottom , #000000, #502449);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+    
+    .priceAll{
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      height: 100%;
+      border-radius: 15px;
+    
+    }
+    
+    .priceClms {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start; 
+    }
+    
+    .priceClms p{
+      font-size: 10px;
+      }
+      .priceClms h3{
+        font-size: 16px;
+        }
+    
+    
+    hr{
+      width: 100%;
+      height: 1px;
+      color: #fff;
+    }
+    .hrTab{
+      display: none;
+    }
+    /* CARACTERS SECTION STYLE */
+    
+    .caract {
+      /* background-color: #9F8DC3; */
+      padding: 10px;
+      text-align: left;
+      margin: 10px;
+      border-radius: 10px;
+      height: 100%;
+      }
+    
+    .caraItem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 25px;
+    }
+    .caraItem h6{
+    margin: 10px;
+    
+    }
+    /* PRICE SECTION STYLE */
+    
+    .priceStyle{
+      width: 15rem;
+      /* background-color: #a334ab; */
+      text-align: center;
+      /* padding: 10px;
+      margin: 10px; */
+      border-radius: 10px;
+      /* height: 100%; */
+      }
+      .pricItem {
+    
+        padding-top: 37px;
+      }
+    .hidenItems{
+      display: none;
+    }
+    .cart1{
+      width: 105px;
+      border-radius: 10px;
+      margin-right: 20px;
+      /* margin-left: 20px; */
+    }
+    .btnRej{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    }
+    .cartPrices{
+      display: flex;
+    }
+    
+    .priceCart1{
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .caraTitle{
+      margin-bottom: 50px;
+    }
+    /* -------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------- */
+    
+
+
+  /* ---------------------------------TABLET------------------------------ */
+  /* ---------------------------------TABLET------------------------------ */
+  /* ---------------------------------TABLET------------------------------ */
+  /* ---------------------------------TABLET------------------------------ */
+  /* ---------------------------------TABLET------------------------------ */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: #15112B;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .logoP{
+    width: 120px;
+    left: -30%;
+    top: 10px;
+    position: relative;
+}
+  nav #check:checked ~ ul {
+    left: 0;
+    
+  }
+  nav #check:checked ~ .liBtn{
+    display: none;
+  }
+
+  .Av-item {
+    width: calc(50% - 10px); /* Two items per line on tablets */
+    margin-bottom: 20px;
+    text-align: center; /* Center text horizontally */
+  }
+  .Av-item:nth-child(3) {
+    margin-left: auto; /* Align the third item to the right */
+    margin-right: auto; /* Align the third item to the left */
+  }
+  .Av-item h3{
+    font-size: 18px;
+
+  }
+
+  .Av-item p{
+    font-size: 16px;
+  margin: 5px 1.5rem;
+  width: 180px;
+  margin: 0 auto;
+
+  }
+
+/* -------------------partenaire--- */
+
+.nositem {
+    width: calc(50% - 10px); /* Two items per line on tablets */
+    margin-bottom: 20px;
+    text-align: center; /* Center text horizontally */
+  }
+  .nositem:nth-child(3) {
+    margin-left: auto; /* Align the third item to the right */
+    margin-right: auto; /* Align the third item to the left */
+  }
+
+/* ----------- */
+
+
+
+  li .btnStyle2 {
+    display: block;
+
+}
+ul li .btnStyle1{
+  display: flex;
+  margin-left: auto;
+
+}
+
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+  .section {
+    background-color: #15112B;
+    padding: 0.5rem;
+    /* display: grid; */
+  
+  
+  }
+
+
+  .section__container {
+    padding: 5.2rem 1rem 5rem 1rem;
+    text-align: center;
+    margin: 0 auto; /* Center the container horizontally */
+  } 
+
+  .background-text {
+    background-image: url('assets/neo-banks.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 20px;
+    text-align: center; 
+    height: 400px;
+    width: auto;
+    margin: 7.5% auto 0; /* Center the background text vertically and horizontally */
+    border-radius: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+/* ---------------------------------pricing style --------------------------------*/
+
+.price{
+
+    width: 700px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    text-align: center;
+    /* margin-left: 150px;
+    margin-right: 50px; */
+    border-radius: 15px;
+    padding-bottom: 20px;
+    }
+    
+    .priceAll{
+      
+      padding: 10px;
+      margin: 10px;
+      height: 100%;
+      border-radius: 15px;
+    
+    }
+  
+    .caract{
+      display: none;
+    }
+  
+  .priceStyle{
+      width:100%;
+      color: #fff;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two equal-sized columns */
+      gap: 10px;
+      flex-direction: row;
+      }
+  .column{
+    /* background-color: #f0f0f0; */
+    padding: 10px;
+    /* margin-top: -100%; */
+    /* width: 100% !important; */
+  }
+  .priceClms{
+    flex-direction: column;
+  
+  }
+  
+  .pricItem {
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: red; */
+  
+      }
+  .pricItem p{
+        /* flex: 1 1 50%; */
+  
+        flex-basis: calc(50% - 10px);
+        /* background-color: aqua; */
+      }
+  
+  .pricVal{
+    text-align: right;
+    
+  }
+  hr{
+    display: none;
+  }
+  .hrTab{
+    display: block;
+  }
+  .hidenItems{
+    display: block;
+    text-align: left;
+  margin-left: 10px;
+  
+  }
+  
+  .caraItem{
+    flex-direction: row;
+    justify-content: space-between;
+    
+    }
+br{
+      display: none;
+    }
+
+/* ---------------------POURQUOI CHIZA------------------ */
+.container{
+    flex-direction: column;   
+ 
+}
+.container p{
+font-size: 22px;
+}
+
+.imgpourquoi{
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+   
+   }
+/* ----------------------------- */
+   
+
+/* ---------------------CONTACT US---------------------- */
+  .contact {
+    max-width:400px;    
+  left: 40%;
+  
+  }
+  label{
+    font-size: 10px;
+  }
+  .cardB {
+    flex-direction: column; 
+  }
+  input {
+    font-size: 10px;
+    width: 100%;
+}
+.heading{
+    font-size: 18px;
+}
+#text{
+    font-size: 9px;
+}
+.ligne1{
+    display: flex;
+    flex-direction: column;
+
+  }
+   /* .explorez{
+    font-size: 14px;
+  }
+  .btnExplorez{
+
+    font-size: 12px;
+  
+  } */
+  .explorezCon {
+    margin-top: 3%;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .explorez {
+    font-size: 20px;
+  }
+
+  .explorezCon p.btnExplorez {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+
+
+  /* ------------------ */
+
+
+/* -----------------------TECHNOLOGIR---------------- */
+  .technologies {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Center items horizontally */
+    justify-content: center; 
+  }
+
+  .securité{
+    border-radius: 30px;
+    width: 600px;   
+   margin-left: 20px;
+   padding: 40px 40px;   
+   font-size: 50px;
+   
+  }
+
+.protection{ 
+    border-radius: 30px;
+    width: 600px;
+   margin-left: 20px;
+   margin-bottom:20px ;
+
+    padding: 40px 40px;   
+}
+
+.respecter{
+    border-radius: 30px;
+    width: 600px;
+    margin-left: 20px;
+    margin-bottom:20px ;
+    padding: 40px 40px;   
+}
+
+
+  .Sécurité-PR{
+    flex-direction: column;
+
+  }
+/* ---------------------------------------------------- */
+
+  h1{
+    font-size: 19px;
+  }
+  .valeurs{
+    flex-direction: column-reverse;
+    width: 100%;
+    /* margin-left: 50px; */
+ 
+  }
+ 
+  .text-valeurs{
+    font-size: 10px; 
+    width: 100%;
+}
+
+
+
+h1{
+  font-size: 24px;
+}
+h3{
+  font-size: 16px;
+}
+#VA-img{
+  display: flex;
+    justify-content: center;
+    
+}
+.title-valeur-pharagraphe{
+  display: flex;
+  flex-direction: column;
+}
+.valeurs1{
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+.technologies h1{
+    font-size: 20px;
+   
+}
+
+}
+
+
+
+/* -------------------------------MOBILE-------------------------- */
+/* -------------------------------MOBILE-------------------------- */
+/* -------------------------------MOBILE-------------------------- */
+ @media only screen and (max-width: 767px) {
+
+
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: #15112B;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .logoP{
+    width: 120px;
+    left: -30%;
+    top: 10px;
+    position: relative;
+}
+  nav #check:checked ~ ul {
+    left: 0;
+    
+  }
+  nav #check:checked ~ .liBtn{
+    display: none;
+  }
+/* ----------------AVANTAGE-------- */
+  .Av-item {
+
+        width: 100%; /* One item per line on mobile */
+  }
+  .Av-item h3{
+    font-size: 15px;
+
+  }
+
+  .Av-item p{
+    font-size: 13px;
+  margin: 5px 1.5rem;
+  width: 180px; /* Set width of text to 180px */
+  margin: 0 auto;
+
+  }
+  /* --------------Partenaires--------------- */
+.nositem{
+
+width: 100%;
+
+  }
+  /* -------------------- */
+  li .btnStyle2 {
+  
+    display: block;
+
+}
+ul li .btnStyle1{
+  display: flex;
+  margin-left: auto;
+
+}
+.btnStyle3{
+    font-size: 20px;
+}
+/* -------------------------------------- */
+  ul li a {
+    font-size: 1.25rem;
+  }
+  .section {
+    background-color: #15112B;
+    padding: 0.5rem;
+    /* display: grid; */
+    right: 0%;
+  
+  
+}
+
+/* pricing style */
+
+.price{
+
+    width: 350px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    }
+    
+    .priceAll{
+      
+      padding: 10px;
+      margin: 10px;
+      height: 100%;
+      border-radius: 15px;
+    
+    }
+  
+  .caract{
+    display: none;
+  }
+  
+  .priceStyle{
+    color: #fff;
+    display: grid;
+    gap: 10px;
+    flex-direction: column;
+    }
+  .column{
+  
+  padding: 10px;
+  
+  }
+  .priceClms{
+  flex-direction: column;
+  
+  }
+  
+ .pricItem {
+      display: flex;
+      flex-wrap: wrap;
+  
+    }
+    .pricItem p{
+  
+      flex-basis: calc(50% - 10px);
+    }
+  
+    .pricVal{
+      text-align: right;
+      
+    }
+    hr{
+      display: none;
+    }
+    .hrTab{
+      display: block;
+    }
+    .hidenItems{
+      display: block;
+      text-align: left;
+  margin-left: 10px;
+  
+    }
+
+
+    .section__container {
+        padding: 5.2rem 1rem 5rem 1rem;
+        text-align: center;
+        margin: 0 auto; /* Center the container horizontally */
+      } 
+
+      .background-text {
+        background-image: url('assets/neo-banks.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        padding: 20px;
+        text-align: center; 
+        height: 300px;
+        width: 500px;
+        margin: 7.5% auto 0; /* Center the background text vertically and horizontally */
+        border-radius: 20px;
+      }
+    
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 3rem;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+      }
+    
+      .description {
+        font-size: 15px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+      }
+    
+      /* Other styles... */
+    
+/* pourquoi--------------- */
+
+
+
+ 
+
+.container{
+    flex-direction: column;
+   }
+   .container p{
+    justify-content: center;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+
+       }
+   .imgpourquoi{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+   
+   }
+   
+  /* .avantage{
+    flex-direction: column;
+  } */
+
+  .contact {
+    max-width:400px;    
+  left: 40%;
+  
+  }
+  label{
+    font-size: 10px;
+  }
+  .cardB {
+    flex-direction: column; 
+  }
+  input {
+    font-size: 10px;
+    width: 100%;
+}
+.heading{
+    font-size: 18px;
+}
+#text{
+    font-size: 9px;
+}
+.ligne1{
+    display: flex;
+    flex-direction: column;
+
+  }
+/* ------------EXPLORER---------------- */
+.explorezCon {
+    margin-top: 5%;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+.explorez {
+    font-size: 18px;
+  }
+.explorezCon p.btnExplorez {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+/* ----------------------------- */
+/* ---------TECHNOLOGIES------------- */
+.technologies {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Center items horizontally */
+    justify-content: center; 
+  }
+
+  .securité{
+    border-radius: 20px;
+    width: 350px;   
+   margin-left: 10px;
+   padding: 20px 20px;   
+   font-size: 25px;
+
+  }
+.protection{ 
+    border-radius: 20px;
+    width: 350px;
+   margin-left: 10px;
+   margin-bottom:15px ;
+    padding: 20px 20px;   
+}
+.respecter{
+    border-radius: 20px;
+    width: 350px;
+    margin-left: 10px;
+    margin-bottom:15px ;
+    padding: 20px 20px;   
+}
+  .Sécurité-PR{
+    flex-direction: column;
+
+  }
+  /* ------------------------------------------- */
+
+  h1{
+    font-size: 19px;
+  }
+  /* ------------valeurs-------------- */
+  .VA{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+  }
+  .valeurs{
+    flex-direction: column-reverse;
+    width: 100%;
+    /* margin-left: 50px; */
+ 
+  }
+  .text-valeurs{
+    font-size: 10px; 
+    width: 100%;
+}
+#VA-img{
+    display: flex;
+      justify-content: center;
+      
+  }
+  .title-valeur-pharagraphe{
+    display: flex;
+    flex-direction: column;
+  }
+  .valeurs1{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+h1{
+  font-size: 24px;
+}
+h3{
+  font-size: 16px;
+}
+/* ------------------- */
+.technologies h1{
+    font-size: 14px;
+}
+
+
+}
